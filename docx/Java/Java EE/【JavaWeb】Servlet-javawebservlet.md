@@ -399,6 +399,13 @@ MIME是http协议中数据类型。MIME类型的格式是“大类型/小类型�
 ![image.png](https://pumpkn.xyz/upload/2021/10/image-615e781fc1654f0597329e0223aae7d3.png)
 
 
+# HttpServletRequest类
+
+- ```HttpServletRequest```类的作用
+
+	- 每次只要有请求进入Tomcat服务器，Tomcat服务器就会把请求过来的HTTP协议信息解析好封装到Request对象中。然后传递到service方法（doGet和doPost方法）中给我们使用。我们可以通过HttpServletReqeust对象，获取所有请求的信息
+
+
 
 
 
