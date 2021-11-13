@@ -1,4 +1,4 @@
-## 第4章 算法初步
+### 第4章 算法初步
 
 [&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.1 排序](链接)
 
@@ -13,14 +13,14 @@
 
 [&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4.6 two pointers(双指针)](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E3%80%8B4.6%20two%20pointers--suan-fa-bi-ji-46twopointers.md)
 
-# 第5章 数学问题
+### 第5章 数学问题
 [&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;5.2 最大公约数与最小公倍数](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E3%80%8B5.4%20%E7%B4%A0%E6%95%B0--suan-fa-bi-ji-54su-shu.md)
 
 [<font color = "#87CEEB"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;5.4 素数 </font>](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E3%80%8B5.4%20%E7%B4%A0%E6%95%B0--suan-fa-bi-ji-54su-shu.md)
 
 [<font color = "#87CEEB">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;5.5 质因子分解 </font>](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E3%80%8B5.5%20%E8%B4%A8%E5%9B%A0%E5%AD%90%E5%88%86%E8%A7%A3--suan-fa-bi-ji-55zhi-yin-zi-fen-jie.md)
 
-# 第6章 C++标准模板库(STL)
+### 第6章 C++标准模板库(STL)
 
 [<font color = "#87CEEB">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  6.1 vector详解</font>](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E3%80%8B6.1%20vector%E8%AF%A6%E8%A7%A3--suan-fa-bi-ji-61vector-xiang-jie.md)
 
@@ -40,7 +40,7 @@
 
 [<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  6.9 algorithm头文件下的常用函数</font> ](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E3%80%8B6.9%20algorithm%E5%A4%B4%E6%96%87%E4%BB%B6%E4%B8%8B%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0--suan-fa-bi-ji-69algorithm-tou-wen-jian-xia-chang-yong-han-shu.md)
 
-# 第7章 提高(1)——数据结构
+### 第7章 提高(1)——数据结构
 
 [<font color = "">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  7.1 栈的应用</font> ](链接)
 
@@ -49,13 +49,13 @@
 [<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  7.3 链表的处理</font> ](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E3%80%8B7.3%20%E9%93%BE%E8%A1%A8%E5%A4%84%E7%90%86--suan-fa-bi-ji-73lian-biao-chu-li.md)
 
 
-# 第8章 提高(2)——搜索专题
+### 第8章 提高(2)——搜索专题
 
 [<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  8.1 深度优先遍历(DFS)</font> ](https://pumpkn.xyz/archives/shen-du-you-xian-sou-suo-dfs)
 
 [<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  8.2 广度优先遍历(BFS)</font> ](https://pumpkn.xyz/archives/guang-du-you-xian-sou-suo-bfs)
 
-# 第9章 提高(3)——树、堆
+### 第9章 提高(3)——树、堆
 
 [<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  9.1 树与二叉树</font> ](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E3%80%8B9.1%20%E6%A0%91%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91--suan-fa-bi-ji-91shu-yu-er-cha-shu.md)
 
@@ -73,7 +73,7 @@
 
 [<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  9.8 哈夫曼树</font> ](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E3%80%8B9.8%20%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91-%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B098%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91.md)
 
-# 第10章 提高(4)——图
+### 第10章 提高(4)——图
 
 [<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  10.1 图的定义与相关术语</font> ](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E3%80%8A%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0%E3%80%8B10.1%20%E5%9B%BE%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%9B%B8%E5%85%B3%E6%9C%AF%E8%AF%AD--suan-fa-bi-ji-101tu-de-ding-yi-he-xiang-guan-shu-yu.md)
 
@@ -89,7 +89,7 @@
 
 [<font color = "">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  10.7 关键路径</font> ](链接)
 
-# 第11章 提高(5)——动态规划
+### 第11章 提高(5)——动态规划
 
 [<font color = "">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  11.1 动态规划的递归写法和递推写法</font> ](链接)
 
@@ -107,7 +107,7 @@
 
 [<font color = "">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  11.8 总节</font> ](链接)
 
-# 第12章 提高(6)——字符串
+### 第12章 提高(6)——字符串
 
 [<font color = "">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  12.1 字符串hash进阶</font> ](链接)
 
