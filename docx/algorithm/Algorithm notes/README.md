@@ -51,9 +51,9 @@
 
 ### 第8章 提高(2)——搜索专题
 
-[<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  8.1 深度优先遍历(DFS)</font> ](https://pumpkn.xyz/archives/shen-du-you-xian-sou-suo-dfs)
+[<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  8.1 深度优先遍历(DFS)</font> ](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2DFS-shen-du-you-xian-sou-suo-dfs.md)
 
-[<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  8.2 广度优先遍历(BFS)</font> ](https://pumpkn.xyz/archives/guang-du-you-xian-sou-suo-bfs)
+[<font color = "#87CEEB">  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  8.2 广度优先遍历(BFS)</font> ](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/algorithm/Algorithm%20notes/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2BFS-guang-du-you-xian-sou-suo-bfs.md)
 
 ### 第9章 提高(3)——树、堆
 
