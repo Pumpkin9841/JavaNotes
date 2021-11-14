@@ -404,7 +404,179 @@ MIME是http协议中数据类型。MIME类型的格式是“大类型/小类型�
 - ```HttpServletRequest```类的作用
 
 	- 每次只要有请求进入Tomcat服务器，Tomcat服务器就会把请求过来的HTTP协议信息解析好封装到Request对象中。然后传递到service方法（doGet和doPost方法）中给我们使用。我们可以通过HttpServletReqeust对象，获取所有请求的信息
+	- ```HttpServletRequest```常用方法
+	    - getRequestURI()    获取请求的资源路径 ///06_servlet/testServlet
+	    - getRequestURL()    获取请求的统一资源定位符（绝对路径） //http://localhost:8080/06_servlet/testServlet
+	    - getRemoteHost()   获取客户端的ip地址
+	    - getHeader()          获取请求头
+	    - getParameter()      获取请求的参数
+	    - getParamterValues()     获取请求的参数(多个值的时候使用)
+	    - getMethod()           获取请求的方式GET或POST
+	    - setAttribute( key , value )      设置域数据
+	    - getAttribute(key)        获取域数据
+	    - getRequestDispatcher()   获取请求转发对象
 
+
+        ![image](https://user-images.githubusercontent.com/91939988/141670574-498f6ad4-ddaa-4da1-98b4-c13584c0f0a2.png)
+        
+   
+### doGet请求的中文乱码解决：
+   
+```java
+    // 获取请求参数
+    String username = req.getParameter("username");
+    //先以iso8859-1进行编码
+    //再以utf-8进行解码
+    username = new String(usernmae.getBytes("iso-5589-1") , "UTF-8") ;
+```
+
+### post请求的中文乱码解决
+
+```java
+    
+@Override
+protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException,
+IOException {
+        // 设置请求体的字符集为 UTF-8，从而解决 post 请求的中文乱码问题
+        req.setCharacterEncoding("UTF-8");
+        System.out.println("-------------doPost------------");
+        // 获取请求参数
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        String[] hobby = req.getParameterValues("hobby");
+        System.out.println("用户名：" + username);
+        System.out.println("密码：" + password);
+        System.out.println("兴趣爱好：" + Arrays.asList(hobby));
+}
+
+```
+
+### 请求转发
+
+- 什么是请求转发?
+
+    - 请求转发是指，服务器收到请求后，从一个资源跳转到另一个资源的操作叫请求转发。
+    - ![image](https://user-images.githubusercontent.com/91939988/141670562-383d9e47-5920-433c-9b18-5bcad83f194d.png)
+
+
+- 请求转发特点
+	- 浏览器地址栏没有变化
+	- 他们是同一次请求
+	- 共享Request域中的数据
+	- 可以转发到WEB-INF目录下
+	- 不可以访问工程以外的资源	
+    
+    
+    
+### Web中的相对路径和绝对路径
+
+在JavaWeb中，路径分为**相对路径**和**绝对路径**
+
+- 相对路径
+
+    - ```.```   表示当前目录
+    - ```..```   表示上一级目录
+    - ```资源名```    表示当前目录/资源名
+
+
+- 绝对路径
+
+    -  ``` http://ip:port/工程路径/资源路径```
+
+
+在实际开发中，路径都是用绝对路径，而不简单的使用相对路径
+
+
+### web中 / 斜杠的不同意义
+
+在web 中 / 是一种绝对路径 ， 
+/  如果被**浏览器**解析，得到的地址是: ```http://ip:port/``` 
+
+
+/  如果被**服务器**解析，得到的地址是: ```http://ip:port/工程路径```  
+
+> 特殊情况： response.sendRediect("/") ; 
+> 把斜杠发送给浏览器解析。 得到 ```http://ip:port/``` 
+
+
+# HttpServletResponse类
+
+### HttpServletResponse类的作用
+
+HttpServletResponse类和HttpServletRequest类一样。每次请求进来，Tomcat服务器都会创建一个Response对象传递给Servlet程序去使用。HttpServletRequest表示请求过来的信息，HttpServeltResponse表示所有响应的信息。
+如果需要设置返回给客户端的信息，都可以通过HttpServletResponse对象进行设置
+
+### 两个输出流的说明
+
+
+| 字节流 | getOutputStream() | 常用于下载（传递二进制数据）  |
+| --- | --- | --- |
+| 字符流 | getWriter() |常用于回传字符串（常用）  |
+
+两个流同时只能使用一个。
+
+![image](https://user-images.githubusercontent.com/91939988/141670556-a35c4353-a9ae-4c74-9382-657a79e1ab7c.png)
+
+
+### 如何往客户端回传数据
+
+要求： 往客户端回传 字符串 数据。
+
+```java
+public class ResponseIOServlet extends HttpServlet {
+@Override
+protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException,IOException {
+        //  要求 ： 往客户端回传 字符串 数据。
+        PrintWriter writer = resp.getWriter();
+        writer.write("response's content!!!");
+            }
+}
+
+```
+
+### 响应的乱码解决
+
+解决响应中文乱码方案一（不推荐使用）
+```java
+//设置服务器字符集为UTF-8
+resp.setCharacterEncoding("UTF-8") ;
+//通过响应头，设置浏览器也使用URF-8字符集
+resp.setHeader("Content-Type" , "text/html ; charset=UTF-8" ) ;
+
+```
+
+解决响应中文乱码方案二（推荐）
+```java
+// 他会同时设置服务器和客户端都使用UTF-8字符集，还设置了响应头
+// 此方法一定要在获取对象之前调用才有效
+resp.setContentType("text/html ; charset=UTF-8") ;
+```
+
+### 请求重定向
+
+请求重定向，是指客户端给服务器发送请求，然后服务器告诉客户端，我给你一些地址，你去新地址访问。这就是请求重定向（因为之前的地址可能已经被废弃了）。
+![image](https://user-images.githubusercontent.com/91939988/141670522-c656a0d6-15b3-4915-8904-c459b0458439.png)
+
+- 请求重定向特点
+    - 浏览器地址栏会发生变化
+    - 两次请求
+    - 不共享Request域中数据
+    - 不能访问WEB-INF下的资源、
+    - 可以访问工程外的资源
+
+
+请求重定向的第一种方案
+```java
+//设置响应状态码302，表示重定向（已搬迁）
+resp.setStatus(302) ;
+// 设置响应头，说明新的地址在哪里
+resp.setHeader("Location" , "http://localhost:8080") ;
+```
+
+请求重定向的第二种方案（推荐）
+```java
+resp.sendRedirect("http://localhost:8080") ;
+```
 
 
 
