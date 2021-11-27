@@ -31,7 +31,7 @@
 
  [ 【Gradle】 ]()
 
- [ 【Git】 ]()
+ [ 【Git】 ](https://github.com/Pumpkin9841/JavaNotes/blob/main/docx/other/Git.md)
 
  [ 【Linux】 ]()
 
